@@ -1,0 +1,22 @@
+% If an amount of money A is invested for k years at a nominal annual interest rate r (expressed as a decimal fraction),
+%the value V of the investment after k years is given by :  V =A(1+r/n)^nk  
+%where n is the number of compounding periods per year.
+%Write a program to compute V as n gets larger and larger — that is,as the compounding 
+%periods be come more and more frequent:monthly,daily,hourly,and so forth.TakeA =1000,r =4%,andk =10 years.You should observe 
+%that your output gradually approaches a limit. Hint:use a for loop that doubles n each time,starting with n=1. 
+A=input('capital=')
+k=input('numero de años=')
+r=input('anual=')
+n=input('escrbir la frecuencia "12" para mes, "1"anual, "360"diaro')
+if n==12
+    y=1:(12*k);
+    V=A*(1+(r./y)).^(y*k)
+end
+ if n==1
+    x=1:(k*n);
+    V=A*(1+(r./x)).^(x*k)
+ end
+ if n==360
+     z=1:(k*n);
+     V=A*(1+(r./z)).^(z*k)
+ end
