@@ -1,0 +1,14 @@
+%Write a program to compute the sum of the series 1^2 +2^2 +3^2 ...
+%such that the sum is as large as possible without exceeding 1000.The program should display how many terms the sum uses. 
+clear all
+close all
+clc
+n=0;
+for k=1:1:100000
+    Y(k)=k^2
+    if sum(Y)<=1000
+      n=n+1;  
+    else
+        break;
+    end   
+end
