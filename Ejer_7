@@ -4,6 +4,9 @@
 %Write a program to compute V as n gets larger and larger — that is,as the compounding 
 %periods be come more and more frequent:monthly,daily,hourly,and so forth.TakeA =1000,r =4%,andk =10 years.You should observe 
 %that your output gradually approaches a limit. Hint:use a for loop that doubles n each time,starting with n=1. 
+clear all
+close all
+clc
 A=input('capital=')
 k=input('numero de años=')
 r=input('anual=')
