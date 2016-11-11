@@ -1,0 +1,22 @@
+%La figura p14a muestra un modelo de masa-resorte del tipo para diseñar sistemas de embalaje y suspensiones de vehículos, por ejemplo
+%Los muelles ejercen una fuerza que es constante de proporcionalidad es la constante de muelle k.
+%Los dos resortes laterales proporcionan resistencia adicional si el peso w es demasiado pesado para el resorte central.
+%Cuando el peso w se coloca suavemente, se mueve a través de una distancia x antes de llegar a descansar
+%A partir de la estática, la fuerza de peso debe equilibrar las fuerzas del resorte en esta nueva posición,
+%Estas relaciones pueden usarse para generar el gráfico de w en función de x, mostrado en la figura p14b
+%b)Crear un archivo de función que calcula la distancia x, utilizando los parámetros de entrada w, k1, k2 y d.
+%Pruebe su función para los siguientes dos casos, usando los valores k1 = 10 ^ 4 newtons / metro; K2 = 1,5x10 ^ 4 newtons / metro; D = 0,1 metro
+
+clc
+clear all
+close all
+%k1=(constante de elastisidad del resorte 1)
+%k2=(constante de elastisidad de los resortes 2 y 3)
+
+    k1=(10^4);
+    k2=(1.5*10^4);
+    d=[k1-k2];
+    w1=500
+    w2=2000
+    for
+        w=500
